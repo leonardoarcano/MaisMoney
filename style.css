@@ -1,0 +1,276 @@
+:root{
+    --primary-color: #00FF39;
+    --secundary-color: #FF00C6;
+    --tertiary-color :#FF0046;
+    --neutral-color:#f5f5f5;
+    --font-color: #0000;
+}
+html{
+   font-family: Arial, Helvetica, sans-serif; 
+   font-size: 1.1em;
+}
+body{
+    background-color: var(--neutral-color);
+}
+main{
+    height: auto;
+}
+h1{
+    font-size: 2.5em;
+}
+
+h2{
+    font-size: 1.8em;
+}
+
+h3{
+font-weight: 600}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.botao{
+    border-radius: 10px;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="number"]:focus,
+#mes:focus, #ano:focus, #tipo:focus, #mesOrcamento:focus, #anoOrcamento:focus{   
+  border-color: rgb(0, 255, 57,0.8);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
+  outline: 0 none;
+}
+
+/*Estilização da navegação*/
+
+#navigation{
+    background-color: rgba(0, 0, 0);
+}
+
+.nav-item{
+    font-size: 1.2em;
+    color: whitesmoke;
+}
+
+
+#nav-hover:hover{
+    color:var(--primary-color)
+}
+
+.custom-toggler {
+    border: 1.5px solid var(--primary-color);
+}
+
+.fa-bars{
+    color: var(--primary-color);
+}
+
+/*Fim - Estilização da navegação*/
+
+/*Estilização da home page*/
+.item {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    background-image: linear-gradient(to right,var(--primary-color),#00FFB9);
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    box-shadow: 0 4px 4px  rgba(0, 0, 0, 0.8);
+    transition: all .3s ease-in-out
+}
+
+.orcamento{
+    min-height: 100px;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, var(--secundary-color), var(--tertiary-color));
+    background-color: var(--secundary-color);
+    box-shadow: 0 4px 4px  rgba(0, 0, 0, 0.8);
+    transition: all .3s ease-in-out 
+}
+
+@media (min-width:768px){
+
+.item:hover, .orcamento:hover{
+    transform: scale(1.08);
+}
+
+}
+
+
+.info{
+    margin: 0 auto;
+}
+
+#barra{
+    font-weight: 600;
+}
+
+/*Fim - Estilização da home page*/
+
+/*Estilização das metas*/
+#botaoAddMeta{
+    background-image: linear-gradient(to right, var(--secundary-color), var(--tertiary-color));
+    background-color: var(--secundary-color);
+    padding: 5px;
+    border:none;
+    border-radius: 20px;
+    font-weight: 700;
+    color: black;
+    box-shadow: 0 2px 4px  rgba(0, 0, 0, 0.8)
+}
+.metaItem {
+    min-height: 120px;
+    background-color: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 4px 4px  rgba(0, 0, 0, 0.8);
+}
+
+.btn-add-valor, .btn-add-meta, .icone-bg{
+    background-color: var(--primary-color);
+}
+
+.btn-add-valor:hover, .btn-add-meta:hover{
+    background-color: #00c22a;
+    color: #f5f5f5;
+}
+
+.btn-add-meta{
+    font-weight: 700;
+}
+
+.titulo-meta{
+    margin-bottom: 0;
+}
+
+.barra{
+    border: 2px solid rgb(177, 177, 177);
+    background-color: rgb(177, 177, 177) ;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.porcentagem{
+    border-radius: 10px;
+    text-align: center;
+    max-width: 100%;
+    font-size: 1em;
+    background-color:var(--tertiary-color);
+}
+
+/*Fim - Estilização das metas*/
+
+/*Estilização dos POPUPS*/
+.pop-up-wrapper{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+
+}
+
+.pop-up{
+    text-align: center;
+    width: 90%;
+    min-width: 300px;
+    max-width: 800px;
+    margin: 10% auto;
+    padding: 20px;
+    background: white;
+    position: relative;
+    border-radius: 20px;
+}
+
+@media (max-width:450px){
+    .pop-up{
+        margin-top:30%;
+    }
+}
+
+.pop-up-close{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/*Fim- Estilização dos POPUPS*/
+
+/*Estilização dos botões*/
+
+#adicionar{
+    background-image: linear-gradient(to right, var(--secundary-color), var(--tertiary-color));
+    background-color: var(--secundary-color);
+    padding: 5px;
+    border:none;
+    border-radius: 20px;
+    font-weight: 700;
+    color: black;
+    box-shadow: 0 2px 4px  rgba(0, 0, 0, 0.8)
+}
+.btn-custom{
+    background-color: var(--tertiary-color);
+}
+.btn-custom:hover{
+    background-color: red;
+}
+
+.destaque{
+    color: var(--secundary-color);
+    font-weight: 500;
+}
+
+/*Estilização dos gráficos*/
+
+.graficos{
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+#grafico_1{
+    max-height: 300px;
+}
+
+#mes-atual, #ano-atual{
+    color:var(--tertiary-color);
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+}
+
+.white{
+    color: white;
+}
+
+footer{
+    padding: 40px 0;
+}
+
+.versao{
+    font-size: 12px;
+    text-align: end;
+    font-weight: 700;
+    margin-right: 5%;
+}
+

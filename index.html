@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mais Money - Controle Financeiro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">  
+    <script src="./app.js"></script>
+
+    
+</head>
+  <body onload="buscaGastosMes()">
+
+    <div class="view">
+        <!--NAVBAR-->
+        <header>
+
+          <div id="navigation" class="navbar navbar-expand-md navbar-dark">
+      
+              <nav class="container">
+
+                  <h2 class="white">Mais<span class="destaque">Money</span></h2>
+                  <button class="custom-toggler navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fa-solid fa-bars"></i></span>
+                  </button>
+          
+                  <div class="collapse navbar-collapse justify-content-end" id="navbar">
+                      <ul class="navbar-nav">
+                        <li class="nav-item"><a href="./index.html" id="nav-hover" class="nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+                        <li class="nav-item"><a href="./orcamento.html" id="nav-hover" class="nav-link"><i class="fa-solid fa-wallet"></i> Orçamento</a></li>
+                        <li class="nav-item"><a href="./gastos.html" id="nav-hover" class="nav-link"><i class="fa-solid fa-money-bill-transfer"></i> Gastos</a></li>
+                        <li class="nav-item"><a href="./graficos.html" id="nav-hover" class="nav-link"><i class="fa-solid fa-chart-line"></i> Gráficos</a></li>
+                        <li class="nav-item"><a href="./metas.html" id="nav-hover" class="nav-link"><i class="fa-solid fa-piggy-bank"></i> Metas</a></li>
+                      </ul>
+                  </div>
+              </nav>
+          </div>
+      
+      </header>
+        <!--NAVBAR END-->
+        <!--PAGE CONTEND-->
+        <main>
+
+        <section id="boas-vindas" class="container mt-2 mb-2">
+            <div class="row text-center">
+                <p class="display-5">Seja bem-vindo(a)!</p>
+            </div>
+        </section>
+
+        <section class="container d-flex justify-content-center mb-2">
+          <a href="./orcamento.html" class="col-10 col-md-4">
+            <div id= "" class=" text-center orcamento">
+              <h1 class="">Orçamento</h1>
+              <div id="barra"></div>
+            </div>
+          </a>
+        </section>
+
+        <section class="container d-flex justify-content-center mb-2">
+          <a href="./gastos.html" class="col-10 col-md-4">
+            <div id= "" class="item">
+              <div class="icone"><i class="fa-solid fa-money-bill-transfer fa-3x"></i></div>
+              <div class="info"><h1 class="">Gastos</h1></div>
+              
+            </div>
+          </a>
+
+        </section>
+
+        <section class="container d-flex justify-content-center mb-2">
+          <a href="./graficos.html" class="col-10 col-md-4">
+            <div id= "" class="item">
+              <div class="icone"><i class="fa-solid fa-chart-line fa-3x"></i></div> 
+              <div class="info"><h1 class="">Gráficos</h1></div>
+            </div>
+          </a>
+        </section>
+
+        <section class="container d-flex justify-content-center mb-2">
+          <a href="./metas.html" class="col-10 col-md-4">
+            <div id= "" class="item">
+              <div class="icone"><i class="fa-solid fa-piggy-bank fa-3x"></i></div>
+              <div class="info"><h1 class="">Metas</h1></div>
+              
+            </div>
+          </a>
+        </section>
+
+        </main>
+
+        <footer>
+          <p>Todos os direitos reservados - <a href="https://leonardo-arcano-portfolio-front-end.netlify.app/" target="_blank" class="destaque">Leonardo Arcano</a></p> 
+          </footer>
+      
+          <div class="versao">
+            <p>versão atual: alfa 1.0.0</p>
+          </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
