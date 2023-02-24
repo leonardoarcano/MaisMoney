@@ -109,7 +109,6 @@ input[type="number"]:focus,
 
 }
 
-
 .info{
     margin: 0 auto;
 }
@@ -139,12 +138,18 @@ input[type="number"]:focus,
     box-shadow: 0 4px 4px  rgba(0, 0, 0, 0.8);
 }
 
-.btn-add-valor, .btn-add-meta, .icone-bg{
+.icone-bg{
     background-color: var(--primary-color);
 }
 
+.btn-add-valor, .btn-add-meta{
+    background-color: white;
+    border: 1px solid var(--primary-color);
+    color: black;
+}
+
 .btn-add-valor:hover, .btn-add-meta:hover{
-    background-color: #00c22a;
+    background-color: var(--primary-color);
     color: #f5f5f5;
 }
 

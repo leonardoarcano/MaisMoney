@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="./app.js"></script>
     <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
     
 </head>
   <body onload="carregaMetas()">
@@ -59,7 +61,7 @@
 
                     <div class="row mb-2">
                         <div class="col-7">
-                            <input class="form-control" type="text" id="tituloMeta" placeholder="Sua Meta" maxlength="18">
+                            <input class="form-control" type="text" id="tituloMeta" placeholder="Título da meta:" maxlength="18">
                         </div>
                         
                         <div class="col-5">
@@ -78,14 +80,15 @@
 
                     <div class="input-group mb-2">
                         <span class="input-group-text"><i class="fa-solid fa-brazilian-real-sign"></i></span>
-                        <input id="valorGuardado" type="number" class="form-control" placeholder="Tenho Guardado" aria-describedby="button-addon2">
+                        <input id="valorGuardado" type="number" class="form-control" placeholder="Já tenho guardado:" aria-describedby="button-addon2">
                     </div>   
 
-                    <div class="input-group">
+                    <div class="input-group mb-2">
                         <span class="input-group-text"><i class="fa-solid fa-brazilian-real-sign"></i></span>
-                        <input id="valorMeta" type="number" class="form-control" placeholder="Valor" aria-describedby="button-addon2">
-                        <button class="btn btn-add-meta"  id="button-addon2" onclick="salvarMeta()">Criar Meta</button>
-                    </div>                      
+                        <input id="valorMeta" type="number" class="form-control" placeholder="Custo total da meta:" aria-describedby="button-addon2">
+                    </div>       
+                    
+                    <button class="btn btn-add-meta col-12 btn-sm mt-2"  id="button-addon2" onclick="salvarMeta()">Criar Meta</button>
                 </div>
 
                 <div class="pop-up-wrapper" id="pop-up-status">
